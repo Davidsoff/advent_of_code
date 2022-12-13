@@ -7,6 +7,7 @@ fi
 
 for i in $(seq -f "%02g" 1 $DAYS)
 do 
+    if [[ ! -e 'input' ]]; then mkdir 'input'; fi
     file="input/day$i.txt"
     if [[ ! -e $file ]]
     then

@@ -3,7 +3,7 @@
 YEAR=$1
 mkdir -p $YEAR/input
 
-cp template/get_data.sh $YEAR/
+ln -s template/get_data.sh $YEAR/get_data.sh
 cp template/requirements.txt $YEAR/
 touch $YEAR/input/test.txt
 for i in $(seq -f "%02g" 1 25)
